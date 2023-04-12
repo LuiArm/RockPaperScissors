@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    let gameChoices = ["🖐", "✌️", "✊"]
+   
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack{
+            LinearGradient(gradient: Gradient(colors: [.red, .blue]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            
+            
         }
-        .padding()
     }
 }
+    
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
